@@ -1,0 +1,5 @@
+ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+alter table products add foreign key (category_id) references categories(id);
+alter table images add foreign key (product_id) references products(id);
